@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* THEME DEFINED COLORS */
+:root{
+    --soft-gray: rgba(86, 99, 107, 0.8);
+    --robo-blue: #58B5DE;
+    --robo-black: #00070D;
+    --robo-glow: #C0F2FB;
+}
+
+body {
+    background-color: rgb(86, 99, 107);
+    font-family: 'Montserrat', sans-serif;
+    min-width: 500px;
+}
+
+/* HEADER DECLERATIONS */
+header {
+    height: 80px;
+    padding: 1.2rem 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.inner-header {
+    border: 2px solid var(--robo-glow);
+    border-left: none;
+    border-right: none;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 800px;
+    width: auto;
+}
+
+.inner-header, .navigation > * {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner-header h1, a {
+    color: var(--robo-glow);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+h1 .logo {
+    font-weight: 800;
+}
+
+a {
+    border-right: 1px solid var(--robo-glow);
+    height: 100%;
+    padding: 10 0px;
+}
+
+.inner-header h1 {
+    padding-left: 0;
+}
+
+a.last-item {
+    padding-right: 0;
+    border: none;
+}
+
+/* HERO BANNER DECLARATIONS */
+.home-top {
+    background-image: url("./images/robo-arm-blue-wide.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 1080px;
+    width: 100%;
+}
+
+.hero-banner {
+    background-color: black;
+    color: var(--robo-glow);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    max-width: 1400px;
+    
+}
