@@ -1,0 +1,36 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ---------- THEME DEFINED COLORS ----------*/
+:root{
+    --soft-gray: rgba(86, 99, 107, 0.8);
+    --robo-blue: #58B5DE;
+    --robo-black: #00070D;
+    --robo-glow: #C0F2FB;
+}
+
+/* ---------- MOBILE FIRST DECLERATIONS; iPhone SE; 375 x 667 ---------- */
+html {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(86, 99, 107);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------- HERO BANNER DECLERATIONS; iPhone SE; 375 x 667 ---------- */
+header {
+    background-image: url("../images/robo-arm-blue-wide.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+}
