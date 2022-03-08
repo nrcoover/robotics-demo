@@ -30,10 +30,10 @@
     }
     &:hover, &:focus {
         .line-1 {
-            @include transform-burger($height-line, (2 * -1));
+            @include transform-burger($height-line, (2 * -1), $translateX, 0);
         }
         .line-3 {
-            @include transform-burger($height-line, 2);
+            @include transform-burger($height-line, 2, $translateX, 0);
         }  
     }
     &.active {
@@ -45,7 +45,6 @@
         }
         .line-3 {
             @include transform-burger($translateY-neg, 1, $translateX, $rotation-neg)
-            transform: translateY($translateY-neg) translateX($translateX) rotate($rotation-neg);
         }
     }
 }
