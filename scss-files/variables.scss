@@ -1,0 +1,10 @@
+/* ---------- HAMBURGER ICON VARIABLES ---------- */
+$height-icon: 50px;
+$height-line: 8px;
+$rotation: 45deg;
+$rotation-neg: ($rotation * -1);
+$transition-time: 0.4s;
+$translateY: ($height-icon / 2);
+$translateY-minus: ($translateY - 25px);
+$translateX: 0;
+$width-line: 100px;

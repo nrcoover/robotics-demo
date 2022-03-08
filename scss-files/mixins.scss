@@ -1,0 +1,12 @@
+/* ---------- HAMBURGER ICON MIXINS ---------- */
+@mixin transition-time($time) {
+    transition: all $time;
+    -webkit-transition: all $time;
+    -moz-transition: all $time;
+}
+  
+@mixin transform-burger($translateY, $math, $translateX, $rotation) {
+    transform: translateY($translateY / $math) translateX($translateX) rotate($rotation);
+    -webkit-transform: translateY($translateY / $math) translateX($translateX) rotate($rotation);
+    -moz-transform: translateY($translateY / $math) translateX($translateX) rotate($rotation);
+}

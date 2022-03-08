@@ -1,0 +1,51 @@
+@use 'variables';
+@use 'mixins';
+
+#hamburger-icon {
+    display:block;
+    height:$height-icon;
+    margin: ($height-icon * 2) auto $height-icon auto;
+    position:relative;
+    width:$width-line;
+    
+    .line {
+        @include transition-time($transition-time);
+        background:$color;
+        border-radius:($height-line / 2);
+        display:block;
+        height:$height-line;
+        left:0;
+        position:absolute;
+        width:$width-line;
+        
+        &.line-1 {
+            top:0;
+        }
+        &.line-2 {
+            top:50%;
+        }
+        &.line-3 {
+            top:100%;
+        }
+    }
+    &:hover, &:focus {
+        .line-1 {
+            @include transform-burger($height-line, (2 * -1));
+        }
+        .line-3 {
+            @include transform-burger($height-line, 2);
+        }  
+    }
+    &.active {
+        .line-1 {
+            @include transform-burger($translateY, 1, $translateX, $rotation);
+        }
+        .line-2 {
+            @include transform-burger($translateY-minus, 1, $translateX, $rotation);
+        }
+        .line-3 {
+            @include transform-burger($translateY-neg, 1, $translateX, $rotation-neg)
+            transform: translateY($translateY-neg) translateX($translateX) rotate($rotation-neg);
+        }
+    }
+}
