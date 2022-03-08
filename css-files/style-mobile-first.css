@@ -23,6 +23,8 @@ html {
 body {
     background-color: rgb(86, 99, 107);
     font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* ---------- HERO BANNER DECLERATIONS; iPhone SE; 375 x 667 ---------- */
@@ -33,4 +35,62 @@ header {
     height: 100vh;
     margin: 0 auto;
     width: 100%;
+}
+
+/* ----- hamburger menus declerations ----- */
+
+#hamburger-icon {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  display: block;
+  margin: 100px auto 50px auto;
+}
+  
+.hamburger-line {
+  display:block;
+  background: #ecf0f1;
+  width: 100px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+    
+.line-1 {
+  top:0;
+}
+.line-2 {
+  top:50%;
+}
+.line-3 {
+  top:100%;
+}
+  
+.hamburger-line:hover.line-1, .hamburger-line:focus.line-1 {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+}
+.hamburger-line:hover, .line-3:hover, .hamburger-line:focus, .line-3:focus {
+  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+}  
+
+.line-1.active {
+  transform: translateY(100px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(100px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(100px) translateX(0) rotate(45deg);
+}
+.line-2.active {
+  opacity:0;
+}
+.line-3.active {
+  transform: translateY(-100px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-100px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-100px) translateX(0) rotate(-45deg);
 }
