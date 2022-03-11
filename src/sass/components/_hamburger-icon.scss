@@ -9,7 +9,7 @@
     
     .line {
         @include transitionTime($transitionTime);
-        background:white;
+        background:rgb(177, 31, 31);
         border-radius:(calc($heightLine / 2));
         display:block;
         height:$heightLine;

@@ -2,10 +2,11 @@
 @use './abstracts' as *;
 @use './components';
 
-header {
+.hero-banner {
     background-image: url("../assets/robo-arm-blue-wide.jpg");
     background-position: center;
     background-size: cover;
+    display: block;
     height: 100vh;
     margin: 0 auto;
     width: 100%;
