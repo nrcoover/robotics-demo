@@ -4,7 +4,7 @@ $height-line: 8px;
 $rotation: 45deg;
 $rotation-neg: ($rotation * -1);
 $transition-time: 0.4s;
-$translateY: ($height-icon / 2);
+$translateY: calc($height-icon / 2);
 $translateY-minus: ($translateY - 25px);
 $translateY-neg: ($translateY * -1);
 $translateX: 0;
