@@ -1,0 +1,12 @@
+@use './base';
+@use './abstracts' as *;
+@use './components';
+
+header {
+    background-image: url("../assets/robo-arm-blue-wide.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+}

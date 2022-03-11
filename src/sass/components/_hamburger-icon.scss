@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+#hamburger-icon {
+    display:block;
+    height: $heightIcon;
+    margin: ($heightIcon * 2) auto $heightIcon auto;
+    position:relative;
+    width:$widthLine;
+    
+    .line {
+        @include transitionTime($transitionTime);
+        background:white;
+        border-radius:(calc($heightLine / 2));
+        display:block;
+        height:$heightLine;
+        left:0;
+        position:absolute;
+        width:$widthLine;
+        
+        &.line-1 {
+            top:0;
+        }
+        &.line-2 {
+            top:50%;
+        }
+        &.line-3 {
+            top:100%;
+        }
+    }
+    &:hover, &:focus {
+        .line-1 {
+            @include transformBurger($heightLine, (2 * -1), $translateX, 0);
+        }
+        .line-3 {
+            @include transformBurger($heightLine, 2, $translateX, 0);
+        }  
+    }
+    &.active {
+        .line-1 {
+            @include transformBurger($translateY, 1, $translateX, $rotation);
+        }
+        .line-2 {
+            @include transformBurger($translateYMinus, 1, $translateX, $rotation);
+        }
+        .line-3 {
+            @include transformBurger($translateYNeg, 1, $translateX, $rotationNeg)
+        }
+    }
+}

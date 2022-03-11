@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+
+/* ---------- HAMBURGER ICON MIXINS ---------- */
+@mixin transitionTime($time) {
+    transition: all $time;
+    -webkit-transition: all $time;
+    -moz-transition: all $time;
+}
+  
+@mixin transformBurger($translateY, $math, $translateX, $rotation) {
+    transform: translateY(calc($translateY / $math)) translateX($translateX) rotate($rotation);
+    -webkit-transform: translateY(calc($translateY / $math)) translateX($translateX) rotate($rotation);
+    -moz-transform: translateY(calc($translateY / $math)) translateX($translateX) rotate($rotation);
+}
