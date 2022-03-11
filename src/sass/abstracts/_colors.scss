@@ -1,13 +1,12 @@
-@use '../abstracts/variables';
-
+$bgColor: rgb(86, 99, 107);
+$softGray: rgba(86, 99, 107, 0.8);
+$roboBlue: #58B5DE;
+$roboBlack: #00070D;
+$roboGlow: #C0F2FB;
 
 :root{
     --soft-gray: rgba(86, 99, 107, 0.8);
     --robo-blue: #58B5DE;
     --robo-black: #00070D;
     --robo-glow: #C0F2FB;
-}
-
-body {
-    background-color: rgb(86, 99, 107);
 }

@@ -1,6 +1,5 @@
 @use '../abstracts/variables' as *;
 
-/* ---------- HAMBURGER ICON MIXINS ---------- */
 @mixin transitionTime($time) {
     transition: all $time;
     -webkit-transition: all $time;
