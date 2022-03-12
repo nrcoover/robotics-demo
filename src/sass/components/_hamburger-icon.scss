@@ -1,20 +1,27 @@
 @use '../abstracts' as *;
 
+.hamburger-wrapper {
+    @include flexCenterColumn;
+    display: inline-block;
+    height: calc($heightIcon * 3);
+    width: $widthLine;
+}
+
 #hamburger-icon {
+    @include flexCenterColumn;
     display: block;
-    height: $heightIcon;
-    margin: ($heightIcon * 2) auto $heightIcon auto;
+    height: calc($heightIcon * 3);
     position: relative;
     width:$widthLine;
     
     .hamburger-line {
         @include transitionTime($transitionTime);
-        background-color: $bgColor;
+        background-color: $roboGlow;
         border-radius: (calc($heightLine / 2));
         display: block;
         height: $heightLine;
         left: 0;
-        // position: absolute;
+        position: absolute;
         width: $widthLine;
         
         &.line-1 {
@@ -49,11 +56,12 @@
 }
 
 a {
+    height: inherit;
+    width: inherit;
     text-decoration:none;
     color: #95a5a6;
-    margin: 0.5em 1.5em;
     display: inline-block;
     &:hover, &:focus {
       color: $bgColor;
     }
-  }
+}

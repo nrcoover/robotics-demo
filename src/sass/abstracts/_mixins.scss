@@ -1,5 +1,19 @@
 @use '../abstracts/variables' as *;
 
+@mixin flexCenterRow {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flexCenterColumn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @mixin transitionTime($time) {
     transition: all $time;
     -webkit-transition: all $time;

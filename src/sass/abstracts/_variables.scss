@@ -1,5 +1,5 @@
-$heightIcon: 50px;
-$heightLine: 8px;
+$heightIcon: 7px;
+$heightLine: .35rem;
 $rotation: 45deg;
 $rotationNeg: ($rotation * -1);
 $transitionTime: 0.4s;
@@ -7,4 +7,5 @@ $translateY: calc($heightIcon / 2);
 $translateYMinus: ($translateY - 25px);
 $translateYNeg: ($translateY * -1);
 $translateX: 0;
-$widthLine: 100px;
+$widthLine: 3rem;
+$maxWidth: 70rem;
